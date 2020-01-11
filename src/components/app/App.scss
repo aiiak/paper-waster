@@ -1,0 +1,22 @@
+html,
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.container {
+    //width: 624px;
+    background-color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+}

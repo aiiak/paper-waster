@@ -1,0 +1,21 @@
+@import './global.scss';
+
+.button {
+    padding: 5px 10px;
+    font-size: 14pt;
+    height: fit-content;
+    background-color: $color-light;
+    border: 1px solid $color-dark;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+
+    &-disabled {
+        cursor: default;
+        background-color: $color-disabled;
+    }
+}
+
+.bg-red {
+    background-color: lightsalmon;
+}

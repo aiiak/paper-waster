@@ -1,0 +1,21 @@
+@import '../../style/global.scss';
+.toolbar {
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-content: initial;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    input {
+        margin-left: 10px;
+        float: right;
+    }
+    b {
+        color: $color-dark;
+    }
+    & .button {
+        margin-inline-start: 5px;
+    }
+}

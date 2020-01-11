@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/dist": true,
+        "**/node_modules": true
+    },
+    "cSpell.words": [
+        "Kawaii",
+        "ednregion",
+        "immer",
+        "typesafe"
+    ]
+}

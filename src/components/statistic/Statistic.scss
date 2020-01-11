@@ -1,0 +1,18 @@
+.statistic {
+    min-width: 400px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+
+    .resultCaption {
+        font-size: 18pt;
+    }
+
+    .toolbar {
+        display: 'flex';
+        align-content: space-between;
+        padding-top: 10px;
+    }
+}
