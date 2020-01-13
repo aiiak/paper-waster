@@ -4,7 +4,7 @@ by [Sasha Iakovlev](https://github.com/aiiak/)
 
 This is a small logical game, that can force your brain work
 
-## What in about?
+## What is about?
 
 This game is browser version of a game a played with pen and paper when studied in high school.
 
