@@ -47,7 +47,7 @@ const StatusComponent: React.FC<StatusProps> = props => {
                 <p>
                     <b> Alt + </b>&nbsp;
                     <FontAwesomeIcon icon={faArrowLeft} border={true} />
-                    <FontAwesomeIcon icon={faArrowRight} border={true} /> to try squash cells
+                    <FontAwesomeIcon icon={faArrowRight} border={true} /> to UNDO / REDO
                 </p>
                 <p>
                     <b> Enter </b> to refill the board
