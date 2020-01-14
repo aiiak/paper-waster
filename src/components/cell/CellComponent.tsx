@@ -14,7 +14,7 @@ const CellComponent: React.FC<CellComponentProps> = props => {
         <div
             className={props.isActive ? ' cell cell-active' : 'cell'}
             key={props.cell.id}
-            onClick={() => props.selectCell(props.cell.position)}
+            onPointerDown={() => props.selectCell(props.cell.position)}
         >
             {props.cell.value}
         </div>

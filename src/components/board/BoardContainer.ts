@@ -58,6 +58,15 @@ const mapDispatchToProps = (dispatch: ThunkDispatch<IState, void, BoardAction>) 
                 }
                 return dispatch({ type: actionType });
             }
+        },
+        mouseDrag: (xDiff: number, yDiff: number): boolean => {
+            const diff = 50;
+            xDiff > diff && dispatch(thunkActions.squash(boardActionTypes.SQUASH_RIGHT));
+            xDiff < -diff && dispatch(thunkActions.squash(boardActionTypes.SQUASH_LEFT));
+            yDiff > diff && dispatch(thunkActions.squash(boardActionTypes.SQUASH_DOWN));
+            yDiff < -diff && dispatch(thunkActions.squash(boardActionTypes.SQUASH_UP));
+
+            return Math.abs(xDiff) > diff || Math.abs(yDiff) > diff;
         }
     };
 };
