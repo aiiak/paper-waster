@@ -4,6 +4,9 @@ import { boardActionTypes } from './boardActions';
 import { actionToDirectionMap, DEFAULT_BOARD_VALUES, squashActionsArray } from './boardConstants';
 import BoardHelper from './boardHelper';
 import { Board, BoardAction } from './types';
+import { enablePatches } from 'immer';
+
+enablePatches();
 
 export const boardInitialState: Board = {
     turn: 0,
@@ -11,7 +14,7 @@ export const boardInitialState: Board = {
     canRedo: false,
     canUndo: false,
     rows: BoardHelper.createBoardRows(DEFAULT_BOARD_VALUES),
-    cellLeft: DEFAULT_BOARD_VALUES.length
+    cellLeft: DEFAULT_BOARD_VALUES.length,
 };
 
 interface IUndoRedoItem {
@@ -103,7 +106,7 @@ export const boardReducer = (state: Board = boardInitialState, action: BoardActi
 
                 changes[currentVersion] = {
                     redo: patches,
-                    undo: inversePatches
+                    undo: inversePatches,
                 };
             }
             delete changes[currentVersion - noOfVersionsSupported];
